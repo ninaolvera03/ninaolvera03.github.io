@@ -4,6 +4,11 @@
       <title>Contact Me</title>
       <link rel = "shortuct icon" href="images/NO.png">
       <link rel="stylesheet" href="styles.css">
+
+      <script src="contact.js"></script>
+
+
+
       <style>
         .contactbackground{
             background-color: #0c253d;
@@ -14,6 +19,32 @@
             width:fit-content;
             margin: auto;
             padding: 5px;
+        }
+        legend{
+            text-align: center;
+        }
+        fieldset{
+            padding: 2px 3px 7px;
+            border-radius: 4px;
+        }
+        label{
+            display: inline-block;
+            vertical-align: top;
+            width: 75px;
+            color: #777777
+        }
+        input, textarea{
+            width: 250px;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            margin-bottom: 3px;
+        }
+        .sbmt-btn{
+            padding: 2px 5x;
+            width: fit-content;
+            font-size: 13px;
+            color: #666666;
+            background-color: #eeeeee;
         }
       </style>
     </head>
@@ -49,7 +80,7 @@
         </header>
 
         <div class="contactbackground">
-            <form>
+            <form name="contactMe" onsubmit="return sendMessage();">
                 <fieldset>
                     <legend>Contact Me</legend>
                    <label>Name:</label>
@@ -62,10 +93,10 @@
 
 
                    <label>Message:</label>
-                   <textarea name="Message" rows="5" cols="50"></textarea><br>
+                   <textarea name="message" rows="5" cols="50"></textarea><br>
 
 
-                   <input type="submit" value="Submit Email!">
+                   <input class="sbmt-btn" type="submit" value="Send Email!">
                 </fieldset>
 
             </form>
