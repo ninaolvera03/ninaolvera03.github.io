@@ -7,11 +7,19 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #708090;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     top: 0;
     position: sticky;
+    overflow: hidden;
+}
+
+.header-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .profile{
@@ -24,15 +32,28 @@ header{
     font-weight: 700
 }
 
+.profile-info p a {
+    color: white;
+    font-size: 14px;
+}
+
 .nav-bar{
     display: flex;
-    gap: 25px;
+    gap: 40px;
     list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-bar a{
     color: white;
     text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 1px;
 }
 
 .nav-bar .current{
@@ -44,9 +65,9 @@ a:hover{
 }
 
 .profile-img img{
-    width: 90px;
+    width: 100%;
     height: 75px;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 
 .socials img{
@@ -55,7 +76,7 @@ a:hover{
 }
 
 footer{
-    background-color: #708090;
+    background-color: #020d18;
     bottom: 0px;
     position: fixed;
     width: 100%;
