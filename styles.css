@@ -29,12 +29,14 @@ header{
 
 .profile-info h1{
     color: white;
-    font-weight: 700
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .profile-info p a {
     color: white;
     font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .nav-bar{
@@ -54,6 +56,7 @@ header{
     text-decoration: none;
     font-size: 24px;
     letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .nav-bar .current{
@@ -84,4 +87,5 @@ footer{
     color: white;
     font-size: 20px;
     padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
 }
