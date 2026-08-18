@@ -89,3 +89,7 @@ footer{
     padding: 5px;
     font-family: 'Courier New', Courier, monospace;
 }
+body{
+    background-color: #0c253d;
+    margin: 0;
+}
